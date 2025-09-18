@@ -1,0 +1,270 @@
+/* Style umum */
+body {
+    background-color: #f9f9f9;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Header */
+h2 {
+    font-weight: 600;
+    text-align: center;
+    color: #333;
+}
+
+/* Card produk */
+.card {
+    border-radius: 15px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+}
+
+/* Tombol */
+.btn {
+    border-radius: 12px;
+    font-weight: 500;
+    padding: 10px;
+}
+.btn-primary {
+    background: linear-gradient(135deg, #007bff, #0056b3);
+    border: none;
+}
+.btn-primary:hover {
+    background: linear-gradient(135deg, #0056b3, #003f7f);
+}
+.btn-success {
+    background: linear-gradient(135deg, #28a745, #1c7c31);
+    border: none;
+}
+.btn-success:hover {
+    background: linear-gradient(135deg, #1c7c31, #145822);
+}
+
+/* Keranjang list */
+.list-group-item {
+    border-radius: 8px;
+    margin-bottom: 5px;
+}
+
+/* Form checkout */
+form {
+    background: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+/* Responsif HP */
+@media (max-width: 576px) {
+    h2 {
+        font-size: 20px;
+    }
+    .card h5 {
+        font-size: 16px;
+    }
+    .btn {
+        font-size: 14px;
+        padding: 8px;
+    }
+}
+
+/* Background gradasi semua halaman */
+body {
+    background: linear-gradient(135deg, #ff8ac9, #ffffff, #a78bfa, #60a5fa);
+    background-size: 400% 400%;
+    animation: gradientBG 10s ease infinite;
+    min-height: 100vh;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Animasi gradasi */
+@keyframes gradientBG {
+    0% {background-position: 0% 50%;}
+    50% {background-position: 100% 50%;}
+    100% {background-position: 0% 50%;}
+}
+
+/* Box utama (login, konten, dashboard) */
+.container-box {
+    background: rgba(255,255,255,0.9);
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    max-width: 900px;
+    margin: 2rem auto;
+}
+
+/* Judul */
+h1, h2, h3 {
+    background: linear-gradient(90deg, #ec4899, #a78bfa, #60a5fa);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+}
+
+/* Tabel */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+table th, table td {
+    border: 1px solid #e9d5ff;
+    padding: 10px;
+    text-align: center;
+}
+table th {
+    background: #fdf2f8;
+    color: #d63384;
+}
+
+/* Tombol cantik */
+.btn-gradient {
+    background: linear-gradient(90deg, #ec4899, #a78bfa, #60a5fa);
+    border: none;
+    color: #fff !important;
+    font-weight: bold;
+    border-radius: 12px;
+    padding: 10px 20px;
+    transition: 0.3s;
+    display: inline-block;
+    text-decoration: none;
+}
+.btn-gradient:hover {
+    background: linear-gradient(90deg, #db2777, #7c3aed, #2563eb);
+    transform: scale(1.05);
+}
+
+/* Form input */
+.form-control {
+    border-radius: 12px;
+    border: 1px solid #d8b4fe;
+    padding: 10px;
+}
+
+/* Alert */
+.alert-danger {
+    border-radius: 12px;
+}
+/* Background gradasi */
+body {
+    background: linear-gradient(135deg, #ff8ac9, #ffffff, #a78bfa, #60a5fa);
+    background-size: 400% 400%;
+    animation: gradientBG 10s ease infinite;
+    min-height: 100vh;
+    font-family: "Poppins", sans-serif;
+}
+@keyframes gradientBG {
+    0% {background-position: 0% 50%;}
+    50% {background-position: 100% 50%;}
+    100% {background-position: 0% 50%;}
+}
+
+/* Box utama */
+.container-box {
+    background: rgba(255,255,255,0.9);
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    max-width: 900px;
+    margin: 2rem auto;
+    animation: fadeInUp 1s ease forwards;
+    opacity: 0;
+}
+@keyframes fadeInUp {
+    from {opacity: 0; transform: translateY(30px);}
+    to {opacity: 1; transform: translateY(0);}
+}
+
+/* Logo animasi */
+.logo {
+    animation: bounce 3s infinite;
+}
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+/* Judul gradasi */
+h1, h2, h3 {
+    background: linear-gradient(90deg, #ec4899, #a78bfa, #60a5fa);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+}
+
+/* Tombol cantik dengan animasi */
+.btn-gradient {
+    background: linear-gradient(90deg, #ec4899, #a78bfa, #60a5fa);
+    border: none;
+    color: #fff !important;
+    font-weight: bold;
+    border-radius: 12px;
+    padding: 10px 20px;
+    transition: 0.3s;
+    display: inline-block;
+    text-decoration: none;
+    opacity: 0;
+    transform: scale(0.9);
+    animation: popIn 0.6s forwards;
+}
+.btn-gradient:hover {
+    background: linear-gradient(90deg, #db2777, #7c3aed, #2563eb);
+    transform: scale(1.05);
+}
+@keyframes popIn {
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Urutan animasi tombol */
+.btn1 { animation-delay: 0.4s; }
+.btn2 { animation-delay: 0.7s; }
+.btn3 { animation-delay: 1s; }
+
+/* Tabel animasi */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+    animation: fadeInUp 1.2s ease forwards;
+    opacity: 0;
+}
+table th, table td {
+    border: 1px solid #e9d5ff;
+    padding: 10px;
+    text-align: center;
+}
+table th {
+    background: #fdf2f8;
+    color: #d63384;
+}
+
+/* Form input animasi */
+.form-control {
+    border-radius: 12px;
+    border: 1px solid #d8b4fe;
+    padding: 10px;
+    transition: 0.3s;
+}
+.form-control:focus {
+    box-shadow: 0 0 10px #a78bfa;
+    transform: scale(1.02);
+}
+
+/* Alert */
+.alert-danger {
+    border-radius: 12px;
+    animation: shake 0.5s;
+}
+@keyframes shake {
+    0% {transform: translateX(0);}
+    25% {transform: translateX(-5px);}
+    50% {transform: translateX(5px);}
+    75% {transform: translateX(-5px);}
+    100% {transform: translateX(0);}
+}
